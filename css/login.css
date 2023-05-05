@@ -7,7 +7,7 @@ body{
 .container{
     background: #F6F1F1;
     width: 27%;
-    height: 500px;
+    height: 550px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -37,7 +37,7 @@ form{
     opacity: 0.7; 
 }
 
-input[type=text]{
+input[type=email]{
     background: rgba(175, 211, 226, 0.5);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -75,16 +75,19 @@ input[type=password]{
 /* start css icon */
 i{
     position: absolute;
-    left: 79%;
 }
 
-i.fa-regular{
-    bottom: 66%;
+i.fa-solid.fa-envelope{
+    bottom: 68.5%;
+    left: 78%;
+
 }
 
-i.fa-solid{
-    bottom: 48%;
+i.fa-solid.fa-lock{
+    bottom: 52%;
     cursor: pointer;
+    left: 78%;
+
 }
 /* end css icon */
 
@@ -94,7 +97,7 @@ input[type=checkbox]{
     border: 2px solid #CACACA;
     accent-color: #19A7CE;
     position: absolute;
-    bottom: 39%;
+    bottom: 45%;
     left: 14%;
 }
 
@@ -104,7 +107,7 @@ span.Rme{
     font-size: small;
     color: #146C94;
     position: absolute;
-    bottom: 39%;
+    bottom: 45%;
     left: 19%;
 }
 
@@ -132,6 +135,28 @@ span.notHaveAnAccount{
     line-height: 30px;
     color: #000000;
 }
+
+.socialMediaSignin p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 33px;
+    color: #146C94;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.socialMediaSignin .fa-brands.fa-google-plus-g{
+    right: 205px;
+    bottom: 48px;
+    cursor: pointer;
+}
+
+.socialMediaSignin .fa-brands.fa-facebook{
+    right: 140px;
+    bottom: 50px;
+    cursor: pointer;
+}   
 
 a{
     font-style: normal;
