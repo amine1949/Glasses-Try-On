@@ -1,3 +1,36 @@
+<?php
+
+    // ----------------------link project with db--------------------------------- 
+    @include 'connexion.php';
+    // ----------------------link project with db--------------------------------- 
+
+    
+    if(isset($_POST['submit'])){
+        
+        $username = mysqli_real_escape_string($connection,$_POST['Username']);
+        $password = md5($_POST['password']);
+        
+
+        $select = " SELECT * FROM `users` WHERE username = '$username' && password = '$password'";
+
+        $result = mysqli_query($connection, $select);
+
+        if(mysqli_num_rows($result) > 0){
+            $row = mysqli_fetch_array($result);
+
+            if ($row['user_type'] == 'admin') {
+                $_SESSION['admin_name'] = $row['admin'];
+                header('location:dashboard_Admin.php');
+            }elseif($row['user_type'] == 'user'){
+                $_SESSION['user_name'] = $row['user'];
+                header('location:home.php');
+            }
+        }else{
+            $error[] = 'incorrect email or password';
+        };
+    };
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,10 +50,18 @@
 <body>
     <div class="container">
         <img src="/image/Logo.png" alt="Logo" class="logo">
-        <form action="/home.php">
-            <div class="mail"> 
-                <input type="email" name="Email" id="Email" placeholder="Email" required>
-                <i class="fa-solid fa-envelope fa-fade" style="color: #19a7ce; font-size: 25px;"></i>
+        <form action="" method="post">
+
+            <?php 
+                if (isset($error)) {
+                    foreach ($error as $error) {
+                        echo "<script> alert('$error'); </script>";
+                    };
+                };
+            ?>
+            <div class="user"> 
+                <input type="text" name="Username" id="Username" placeholder="Username" required>
+                <i class="fa-regular fa-user fa-fade" style="color: #19a7ce; font-size: 25px;"></i>
             </div>
             <div class="pass">
                 <input type="password" name="password" id="password" placeholder="Password" required>
@@ -28,7 +69,7 @@
             </div>
             <input type="checkbox" name="rememberMe" id="rememberMe">
             <span class="Rme">Remember me</span><br>
-            <input type="submit" value="Login">
+            <input type="submit" name="submit" value="Login">
         </form>
         <div class="signUpHere">
             <span class="notHaveAnAccount">Not have an account ?</span>
