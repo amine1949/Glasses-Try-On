@@ -1,3 +1,35 @@
+<?php
+
+    // ----------------------link project with db--------------------------------- 
+    @include 'connexion.php';
+    // ----------------------link project with db--------------------------------- 
+
+    // --------------------------Add new user in database-----------------------------------
+    if(isset($_POST['submit'])){
+        
+        $email = mysqli_real_escape_string($connection,$_POST['email']);
+        $username = mysqli_real_escape_string($connection,$_POST['Username']);
+        $password = md5($_POST['password']);
+        
+
+        $select = " SELECT * FROM `users` WHERE email = '$email' && password = '$password'";
+
+        $result = mysqli_query($connection, $select);
+
+        if(mysqli_num_rows($result) > 0){
+            $error[] = 'user already exist!' ;
+        }else{
+            $insert = "INSERT INTO users(username, email, password, user_type) VALUE('$username', '$email', '$password', 'user') ";
+
+            mysqli_query($connection, $insert);
+
+            header('location:login.php');
+        };
+    };
+    // --------------------------Add new user in database-----------------------------------
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +49,15 @@
 <body>
     <div class="container">
         <img src="image/Logo.png" alt="Logo" class="logo">
-        <form action="/home.php">
+        <form action="" method="post">
+
+            <?php 
+                if (isset($error)) {
+                    foreach ($error as $error) {
+                        echo "<script> alert('$error'); </script>";
+                    };
+                };
+            ?>
             <div class="Email">
                 <input type="email" name="email" id="email" placeholder="Email" required>
                 <i class="fa-solid fa-envelope fa-fade" style="color: #19a7ce; font-size: 25px;"></i>
@@ -32,7 +72,7 @@
             </div>
             <input type="checkbox" name="rememberMe" id="rememberMe">
             <span class="Rme">Remember me</span><br>
-            <input type="submit" value="Sign up">
+            <input type="submit" name="submit" value="Sign up">
         </form>
 
         <div class="signUpHere">
