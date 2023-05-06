@@ -29,6 +29,7 @@
             $error[] = 'incorrect email or password';
         };
     };
+
 ?>
 
 <!DOCTYPE html>
@@ -45,13 +46,15 @@
     <script src="https://kit.fontawesome.com/2f2d33a415.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/image/glasses1.png" type="image/x-icon">
     <!-- Inclode Icon -->
+    <!-- Inclode Script js  -->
+    <script src="/javascript/loginWithFacbook.js"></script>
+    <!-- Inclode Script js  -->
     <title>GlassesVT Login</title>
 </head>
 <body>
     <div class="container">
         <img src="/image/Logo.png" alt="Logo" class="logo">
         <form action="" method="post">
-
             <?php 
                 if (isset($error)) {
                     foreach ($error as $error) {
@@ -78,9 +81,8 @@
         <div class="socialMediaSignin">
             <p>Sign up with social account</p>
             <i class="fa-brands fa-google-plus-g" style="color: #d60000; font-size: 40px"></i>
-            <i class="fa-brands fa-facebook" style="color: #0d50c5; font-size: 35px"></i>
+            <i class="fa-brands fa-facebook" style="color: #0d50c5; font-size: 35px" ></i>
         </div>
-
     </div>
 </body>
 </html>
