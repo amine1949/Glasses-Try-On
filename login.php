@@ -46,14 +46,11 @@
     <script src="https://kit.fontawesome.com/2f2d33a415.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/image/glasses1.png" type="image/x-icon">
     <!-- Inclode Icon -->
-    <!-- Inclode Script js  -->
-    <script src="/javascript/loginWithFacbook.js"></script>
-    <!-- Inclode Script js  -->
     <title>GlassesVT Login</title>
 </head>
 <body>
     <div class="container">
-        <img src="/image/Logo.png" alt="Logo" class="logo">
+        <img src="/image/logoLogin.png" alt="Logo" class="logo">
         <form action="" method="post">
             <?php 
                 if (isset($error)) {

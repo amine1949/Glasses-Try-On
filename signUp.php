@@ -25,7 +25,7 @@
 
             header('location:login.php');
         };
-    };
+    }; 
     // --------------------------Add new user in database-----------------------------------
 
 ?>
@@ -48,7 +48,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="image/Logo.png" alt="Logo" class="logo">
+        <img src="image/logoLogin.png" alt="Logo" class="logo">
         <form action="" method="post">
 
             <?php 

@@ -24,32 +24,90 @@
     <script src="https://kit.fontawesome.com/2f2d33a415.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/image/glasses1.png" type="image/x-icon">
     <!-- Inclode Icon -->
+    <!-- include js file  -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!-- include js file  -->
     <title>Home</title>
 </head>
 
 <body>
 
     <!-- header section start -->
-        <section class="header">
-            <a href="home.php" class="logo">Eshop.</a>
-
-            <nav class="navBar">
-            <a href="home.php">home</a>
-            <a href="about.php">shop</a>
-            <a href="package.php">categories</a>
-            <a href="book.php">Contact</a>
-        </nav>
-        </section>
+        <?php
+            @include './header_footer/header.php';
+        ?>
     <!-- header section end -->
+        <section class="home">
+            <div class="swiper home-slider">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide  slide" style="background:url(./image/slide1.png) no-repeat">
+                        <div class="content">
+                            <img src="./image/GlassesTryOn.png" alt="GlassesTryOn">
+                            <p>Finding the perfect pair of glasses is easy with Virtual Try-On.
+                                With amazing realism, you can try on glasses from the comfort of your couch.
+                                Our virtual glasses tool lets you try on as many pairs as you like!
+                            </p>
+                            <a href="shop.php" class="btn">Try now</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide" style="background:url(./image/footerBackground.png) no-repeat">
+                        <div class="content">
+                            <img src="./image/GlassesTryOn.png" alt="GlassesTryOn">
+                            <p>Finding the perfect pair of glasses is easy with Virtual Try-On.
+                                With amazing realism, you can try on glasses from the comfort of your couch.
+                                Our virtual glasses tool lets you try on as many pairs as you like!
+                            </p>
+                            <a href="shop.php" class="btn">Try now</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide" style="background:url(./image/ice.jpg) no-repeat">
+                        <div class="content">
+                            <img src="./image/GlassesTryOn.png" alt="GlassesTryOn">
+                            <p>Finding the perfect pair of glasses is easy with Virtual Try-On.
+                                With amazing realism, you can try on glasses from the comfort of your couch.
+                                Our virtual glasses tool lets you try on as many pairs as you like!
+                            </p>
+                            <a href="shop.php" class="btn">Try now</a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+            </div>
+            
+        </section>
+    <!-- home section start   -->
+
+
+
+
+        <h1>Home</h1>
+        <a href="/logout.php">LogOut</a>
 
 
 
 
 
+    <!-- home section end   -->
 
+    <!-- footer section start   -->
+        <?php
+            @include './header_footer/footer.php';
+        ?>
+    <!-- footer section end   -->
 
-    <h1>Welcome</h1>
-    <a href="/logout.php">LogOut</a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="./javascript/slide.js"></script>
 </body>
 
 </html>
