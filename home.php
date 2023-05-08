@@ -79,13 +79,67 @@
                     
                     
                 </div>
-
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
-            </div>
             
+            </div>
         </section>
     <!-- home section start   -->
+
+    <!-- card-offres section start -->
+        <section class="card-offers">
+            <div class="box-container">
+                <div class="box" style="background:url(./image/Women.png) no-repeat">
+                    <div class="content">
+                        <h3>New Collection</h3>
+                        <p>Women's winter<br>Cloth Discount 50%</p>
+                        <a href="#" class="btn">See More</a>
+                    </div>
+                </div>
+                <div class="box" style="background:url(./image/Men.png) no-repeat">
+                    <div class="content">
+                        <h3>New Collection</h3>
+                        <p>Men's winter<br>Cloth Discount 20%</p>
+                        <a href="#" class="btn">See More</a>
+                    </div>
+                </div>
+                <div class="box" style="background:url(./image/Kids.png) no-repeat">
+                    <div class="content ">
+                        <h3>New Collection</h3>
+                        <p>Kids winter<br>Cloth Discount 80%</p>
+                        <a href="#" class="btn">See More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- card-offres section end -->
+
+    <!-- card-clothes section start  -->
+        <section class="card-clothes">
+            <div class="Trending">
+                <h1>Trending</h1>
+                <a href="#">View All</a>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    
+                </div>
+                <div class="box">
+
+                </div>
+                <div class="box">
+
+                </div>
+                <div class="box">
+
+                </div>
+                <div class="box">
+
+                </div>
+                <div class="box">
+
+                </div>
+            </div>
+        </section>
+    <!-- card-clothes section end  -->
 
 
 

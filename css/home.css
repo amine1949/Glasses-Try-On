@@ -70,3 +70,97 @@
     color: black;
 
 } */
+
+.card-offers{
+    margin-top: 50px;
+}
+
+.card-offers .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+.card-offers .box-container .box{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 30rem;
+}
+
+.card-offers .box-container .box h3{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+
+.card-offers .box-container .box p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.card-offers .box-container .box .btn{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    padding: 0.3rem 2.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    background: #AFD3E2;
+    border: 1px solid #19A7CE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 30px;
+    color: #F6F1F1;
+    /* margin-left: 8%; */
+}
+
+.card-clothes{
+    margin: 0;
+    padding: 0;
+}
+
+.card-clothes .Trending{
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-clothes .Trending h1{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 89px;
+    color: #146C94;
+}
+
+.card-clothes .Trending a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    padding: 0.5rem 2.8rem;
+    cursor: pointer;
+    background: #19A7CE;
+    border-radius: 8px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #F6F1F1;
+}
