@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/2f2d33a415.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href=".//image//shopping.png" type="image/x-icon">
     <!-- Inclode Icon -->
-    <title>Product</title>
+    <title>Cart</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
 
 
 
-        <h1>Product</h1>
+        <h1>Cart</h1>
         <a href="/logout.php">LogOut</a>
 
 

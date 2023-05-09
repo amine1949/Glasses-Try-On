@@ -116,7 +116,7 @@
         <section class="card-clothes">
             <div class="Trending">
                 <h1>Trending</h1>
-                <a href="#">View All</a>
+                <a href=".//shop.php">View All</a>
             </div>
             <div class="box-container">
                 <div class="box" onclick="myFunction();">

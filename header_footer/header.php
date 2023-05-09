@@ -36,11 +36,21 @@
 
             <div class="icSign">
                 <a href="../login.php">Sign in</a>
-                <i class="fa-regular fa-heart" ></i>
-                <i class="fa-solid fa-cart-shopping" ></i>
+                <i class="fa-regular fa-heart" onclick="favouritClick();" ></i>
+                <i class="fa-solid fa-cart-shopping" onclick="cartClick();" ></i>
             </div>
         </section>
     <!-- header section end -->
+        <script>
+            function favouritClick() {
+                location.replace("../favourit.php");
+            }
+
+            function cartClick() {
+                location.replace("../cart.php");
+            }
+        </script>
+    
 </body>
 
 </html>
