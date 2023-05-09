@@ -10,7 +10,7 @@
     <!-- Include css Login -->
     <!-- Inclode Icon -->
     <script src="https://kit.fontawesome.com/2f2d33a415.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="/image/glasses1.png" type="image/x-icon">
+    <link rel="shortcut icon" href=".//image//shopping.png" type="image/x-icon">
     <!-- Inclode Icon -->
     <title>Categories</title>
 </head>

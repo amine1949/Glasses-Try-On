@@ -22,7 +22,7 @@
     <!-- Include css Login -->
     <!-- Inclode Icon -->
     <script src="https://kit.fontawesome.com/2f2d33a415.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="/image/glasses1.png" type="image/x-icon">
+    <link rel="shortcut icon" href=".//image//shopping.png" type="image/x-icon">
     <!-- Inclode Icon -->
     <!-- include js file  -->
 
@@ -119,35 +119,74 @@
                 <a href="#">View All</a>
             </div>
             <div class="box-container">
-                <div class="box">
-                    
+                <div class="box" onclick="myFunction();">
+                    <div class="icon">
+                        <i class="fa-regular fa-heart" ></i>
+                    </div>
+                    <div class="content">
+                        <img src=".//image//Article//short.png" class="Article" alt="Short">
+                        <p>MONCLER Logo-Patch Swimming<br>Shorts Red</p>
+                        <span>179DH</span>
+                    </div>
                 </div>
                 <div class="box">
-
+                    <div class="icon">
+                        <i class="fa-regular fa-heart" ></i>
+                    </div>
+                    <div class="content">
+                        <img src=".//image//Article//article2.png" class="Article" alt="article2">
+                        <p>ALEXANDRE VAUTHIER Smoking<br>Jacket Japanese Blue</p>
+                        <span>250DH</span>
+                    </div>
                 </div>
                 <div class="box">
+                    <div class="icon">
+                        <i class="fa-regular fa-heart" ></i>
+                    </div>
+                    <div class="content">
+                        <img src=".//image//Article//Glasses1.jpg" class="Glasses" alt="Glasses1">
+                        <p>Prada<br>PR 17WS Symbole 1AB5S0</p>
+                        <span>190DH</span>
+                    </div>
 
                 </div>
+                
+                <div class="box" >
+                    <div class="icon">
+                        <i class="fa-regular fa-heart" ></i>
+                    </div>
+                    <div class="content">
+                        <img src=".//image//Article//article1.png" class="Article" alt="article1" >
+                        <p>OFF-WHITE KIDS Vulcanized Lace Up<br>White Black</p>
+                        <span>200DH</span>
+                    </div>
+                </div>
+                
                 <div class="box">
-
+                    <div class="icon">
+                        <i class="fa-regular fa-heart" ></i>
+                    </div>
+                    <div class="content">
+                        <img src=".//image//Article/Glasses2.jpg" class="Glasses" alt="Glasses2">
+                        <p>Ray-Ban<br>RB4165 Justin 601/8G</p>
+                        <span>250DH</span>
+                    </div>
                 </div>
                 <div class="box">
-
-                </div>
-                <div class="box">
-
+                    <div class="icon">
+                        <i class="fa-regular fa-heart" ></i>
+                    </div>
+                    <div class="content">
+                        <img src=".//image//Article//hoodie.png" class="Article" alt="hoodie">
+                        <p>OFF-WHITE Opposite Arrows Boxy Hoodie<br>Black/Lime</p>
+                        <span>350DH</span>
+                    </div>
                 </div>
             </div>
         </section>
     <!-- card-clothes section end  -->
 
-
-
-
-        <h1>Home</h1>
         <a href="/logout.php">LogOut</a>
-
-
 
 
 
@@ -162,6 +201,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="./javascript/slide.js"></script>
+    <script>
+        function myFunction() {
+            location.replace("./product.php")
+        }
+    </script>
 </body>
 
 </html>
