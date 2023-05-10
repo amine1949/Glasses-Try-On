@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Include css Login -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="..//css//style.css">
+    <link rel="stylesheet" href="..//css/header.css">
     <!-- Include css Login -->
     <!-- Inclode Icon -->
     <script src="https://kit.fontawesome.com/2f2d33a415.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="/image/glasses1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="..//image//shopping.png" type="image/x-icon">
     <!-- Inclode Icon -->
     <title>Header</title>
 </head>

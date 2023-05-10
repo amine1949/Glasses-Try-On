@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Include css Login -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href=".//css//contact.css">
     <!-- Include css Login -->
     <!-- Inclode Icon -->
     <script src="https://kit.fontawesome.com/2f2d33a415.js" crossorigin="anonymous"></script>
@@ -22,19 +23,26 @@
         ?>
     <!-- header section end -->
             
-    <!-- home section start   -->
+    <!-- Contact section start   -->
+        <section class="contact">
+            <div class="title">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="box-container">
+
+            </div>
+        </section>
 
 
 
 
-        <h1>Contact</h1>
+
+
+
+
+
         <a href="/logout.php">LogOut</a>
-
-
-
-
-
-    <!-- home section end   -->
+    <!-- Contact section end   -->
 
     <!-- footer section start   -->
         <?php

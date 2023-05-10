@@ -23,7 +23,7 @@
         ?>
     <!-- header section end -->
 
-    <!-- home section start   -->
+    <!-- shop section start   -->
         <section class="shop">
             <div class="title">
                 <h1>All Product</h1>
@@ -232,7 +232,7 @@
 
 
 
-    <!-- home section end   -->
+    <!-- shop section end   -->
 
 
     <!-- footer section start   -->

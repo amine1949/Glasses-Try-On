@@ -1,0 +1,15 @@
+.contact .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .title h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    /* line-height: 82px; */
+    color: #146C94;
+}
+
