@@ -1,7 +1,7 @@
 <?php
 
     // ----------------------link project with db--------------------------------- 
-    @include 'connexion.php';
+    @include './/connexion.php';
     // ----------------------link project with db--------------------------------- 
 
     
@@ -11,7 +11,7 @@
         $password = md5($_POST['password']);
         
 
-        $select = " SELECT * FROM `users` WHERE username = '$username' && password = '$password'";
+        $select = " SELECT * FROM `users` WHERE username_U = '$username' && password_U = '$password'";
 
         $result = mysqli_query($connection, $select);
 

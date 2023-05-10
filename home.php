@@ -1,11 +1,10 @@
 <?php 
-        // @include 'connexion.php';
 
-        // session_start();
+    // *-----------------------------Database connected--------------------------------
+    include './/connexion.php';
+    // *-----------------------------Database connected--------------------------------
+
     
-        // if (!isset($_SESSION['user_name'])) {
-        //     header('location:login.php');
-        // }
 ?>
 
 
@@ -119,6 +118,7 @@
                 <a href=".//shop.php">View All</a>
             </div>
             <div class="box-container">
+
                 <div class="box" onclick="myFunction();">
                     <div class="icon">
                         <i class="fa-regular fa-heart" ></i>

@@ -1,10 +1,10 @@
 <?php
 
-    // ----------------------link project with db--------------------------------- 
-    @include 'connexion.php';
-    // ----------------------link project with db--------------------------------- 
+    // *----------------------link project with db--------------------------------- 
+    @include './/connexion.php';
+    // *----------------------link project with db--------------------------------- 
 
-    // --------------------------Add new user in database-----------------------------------
+    // *--------------------------Add new user in database-----------------------------------
     if(isset($_POST['submit'])){
         
         $email = mysqli_real_escape_string($connection,$_POST['email']);
@@ -12,21 +12,21 @@
         $password = md5($_POST['password']);
         
 
-        $select = " SELECT * FROM `users` WHERE email = '$email' && password = '$password'";
+        $select = " SELECT * FROM `users` WHERE email_U = '$email' && password_U= '$password'";
 
         $result = mysqli_query($connection, $select);
 
         if(mysqli_num_rows($result) > 0){
             $error[] = 'user already exist!' ;
         }else{
-            $insert = "INSERT INTO users(username, email, password, user_type) VALUE('$username', '$email', '$password', 'user') ";
+            $insert = "INSERT INTO users(username_U, email_U, password_U, user_type) VALUE('$username', '$email', '$password', 'user') ";
 
             mysqli_query($connection, $insert);
 
             header('location:login.php');
         };
     }; 
-    // --------------------------Add new user in database-----------------------------------
+    // *--------------------------Add new user in database-----------------------------------
 
 ?>
 
