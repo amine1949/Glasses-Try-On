@@ -77,7 +77,7 @@
 
         <div class="signUpHere">
             <span class="notHaveAnAccount">Already have an account ?</span>
-            <a href="/login.php">Sign in Here</a>         
+            <a href="./login.php">Sign in Here</a>         
         </div>
 
         <div class="socialMediaSignin">

@@ -1,7 +1,7 @@
 <?php 
 
     // *-----------------------------Database connected--------------------------------
-    include './/connexion.php';
+    include './connexion.php';
     // *-----------------------------Database connected--------------------------------
 
     
@@ -16,13 +16,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Include css Login -->
-    <link rel="stylesheet" href=".//css//style.css">
-    <link rel="stylesheet" href=".//css//home.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
     <!-- Include css Login -->
     <!-- Inclode Icon -->
     <script src="https://kit.fontawesome.com/2f2d33a415.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href=".//image//shopping.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./image//shopping.png" type="image/x-icon">
     <!-- Inclode Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
     <!-- include js file  -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
@@ -35,7 +38,7 @@
 
     <!-- header section start -->
         <?php
-            @include './/header_footer//header.php';
+            @include './header_footer/header.php';
         ?>
     <!-- header section end -->
         <section class="home">
@@ -49,7 +52,7 @@
                             <p>Finding the perfect pair of glasses is easy with Virtual Try-On.
                                 With amazing realism, you can try on glasses from the comfort of your couch.
                                 Our virtual glasses tool lets you try on as many pairs as you like!
-                            </p>
+                            </p> 
                             <a href="shop.php" class="btn">Try now</a>
                         </div>
                     </div>
@@ -115,21 +118,45 @@
         <section class="card-clothes">
             <div class="Trending">
                 <h1>Trending</h1>
-                <a href=".//shop.php">View All</a>
+                <a href="./shop.php">View All</a>
             </div>
             <div class="box-container">
+                <!-- ----------------------code php,-------------------------- -->
+                    <?php
+
+                        $query = "SELECT * FROM `product`";
+                        $selectProduct = mysqli_query($connection, $query) or die('query filed');
+                        
+                        if(mysqli_num_rows($selectProduct) > 0){
+                            while($fetchProducts = mysqli_fetch_assoc($selectProduct)){
+                                
+
+
+                    // var_dump($fetchProducts);
+                    ?>
+                <!-- ----------------------code php,-------------------------- -->
 
                 <div class="box" onclick="myFunction();">
                     <div class="icon">
                         <i class="fa-regular fa-heart" ></i>
                     </div>
                     <div class="content">
-                        <img src=".//image//Article//short.png" class="Article" alt="Short">
-                        <p>MONCLER Logo-Patch Swimming<br>Shorts Red</p>
-                        <span>179DH</span>
+                        <div>
+                            <?php echo '<img class="img-fluid" src="data:image/jpeg;base64,'.base64_encode($fetchProducts['image_P']).'"/>';?>
+                        </div>
+                        <p><?php echo $fetchProducts['name_P']; ?><br><?php echo $fetchProducts['brend_P']; ?></p>
+                        <span><?php echo $fetchProducts['price_P']?>MAD</span>
                     </div>
                 </div>
-                <div class="box">
+
+                <?php
+                        }
+                    }else{
+                        echo'<p class="empty">No product added yet!</p>';
+                    }
+                
+                ?>
+                <!-- <div class="box">
                     <div class="icon">
                         <i class="fa-regular fa-heart" ></i>
                     </div>
@@ -181,7 +208,7 @@
                         <p>OFF-WHITE Opposite Arrows Boxy Hoodie<br>Black/Lime</p>
                         <span>350DH</span>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     <!-- card-clothes section end  -->
@@ -197,6 +224,8 @@
             @include './header_footer/footer.php';
         ?>
     <!-- footer section end   -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
